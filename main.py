@@ -2,7 +2,7 @@ import streamlit as st
 from io import BytesIO
 from PIL import Image
 from skimage.io import imsave
-from seamcarver import SeamCarver
+from app.seamcarver import SeamCarver
 
 # Nuotraukos konvertavimas atsisiutimui (pixeliu reiksmes konvertuojamos is float64 i uint8)
 def convert_image_for_download(image):
