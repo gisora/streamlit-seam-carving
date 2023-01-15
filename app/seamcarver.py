@@ -98,6 +98,7 @@ class SeamCarver:
             row, col = image.shape
             result = np.zeros((row, col-1), dtype=image.dtype)
 
+        #TODO patkrinti ar nereikia iki row-1, galima priezas IndexError 
         for i in range(row):
             seam_at = seam[i, 1]
             result[i] = np.r_[image[i, :seam_at], image[i, seam_at+1:]]
@@ -122,7 +123,7 @@ class SeamCarver:
         for _ in range(number_of_pixels):
             directions = self.get_directions(edges)
             seam_at = self.get_seam_start_of_lowest_energy(energies_first_row)
-            np.delete(energies_first_row, seam_at)
+            energies_first_row = np.delete(energies_first_row, seam_at)
             seam = self.get_seam(directions, seam_at)
             img_rgb = self.remove_seam_from_image(img_rgb, seam)
             edges = self.remove_seam_from_image(edges, seam)
@@ -135,7 +136,7 @@ class SeamCarver:
         energies_first_row = energies[0, :]
         for _ in range(number_of_pixels):
             seam_at = self.get_seam_start_of_lowest_energy(energies_first_row)
-            np.delete(energies_first_row, seam_at)
+            energies_first_row = np.delete(energies_first_row, seam_at)
             seam = self.get_seam(directions, seam_at)
             img_rgb = self.remove_seam_from_image(img_rgb, seam)
             directions = self.remove_seam_from_image(directions, seam)
