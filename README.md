@@ -19,12 +19,15 @@
 
 ### Paleidimo instrukcijos:
 1. Sukriam virtualią aplinką: python -m venv .env
-2. Įdiegiam reikiamus python modulius: pip install -r requirements.txt
+2. Aktyvuojam virtualią aplinką:
+- Linux: source .env/bin/activate
+- Windows: .env\Scripts\activate
 
+3. Įdiegiam reikiamus python modulius: pip install -r requirements.txt
 - Windows naudotojai scikit-image diegia iš sukompiliuoto paketo. Siunčiamės iš čia [Windows scikit-image binaties](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-image)
 - Suompiliuoto scikit-image paketo diegimas: pip install "package_name".whl
 
-3. Paleidžiam Streamlit prgramą: streamlit run main.py
+4. Paleidžiam Streamlit prgramą: streamlit run main.py
 
 
 
