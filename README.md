@@ -27,7 +27,7 @@
     - Windows naudotojai scikit-image diegia iš sukompiliuoto paketo. Siunčiamės iš čia [Windows scikit-image binaties](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-image)
     - Suompiliuoto scikit-image paketo diegimas: ```pip install "package_name".whl```
 
-- Jupyter notebook failui diegiame python modulius iš requirements_jupyter.txt
+- Jupyter notebook failui diegiame python modulius iš ```requirements_jupyter.txt```
 
 4. Paleidžiam Streamlit prgramą: ```streamlit run main.py```
 
