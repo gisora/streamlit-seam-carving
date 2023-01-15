@@ -1,4 +1,4 @@
-# PTU8 Užduoties Nr. 1 atlikimo rezultatas
+# PTU8 praktinis python 1 dalies darbas
 
 ## Nuotraukos sutraukimas panaikinant mažiausios svarbos siūles
 ## Seam Carving for Content-Aware Image Risizing 
@@ -18,7 +18,7 @@
 - Matplotlib [ https://matplotlib.org/ ]
 
 ### Paleidimo instrukcija:
-1. Sukriam virtualią aplinką: ```python -m venv .env```
+1. Sukuriam virtualią aplinką: ```python -m venv .env```
 2. Aktyvuojam virtualią aplinką:
     - Linux: ```source .env/bin/activate```
     - Windows: ```.env\Scripts\activate```
