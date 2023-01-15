@@ -18,18 +18,18 @@
 - Matplotlib [ https://matplotlib.org/ ]
 
 ### Paleidimo instrukcija:
-1. Sukriam virtualią aplinką: python -m venv .env
+1. Sukriam virtualią aplinką: ```python -m venv .env```
 2. Aktyvuojam virtualią aplinką:
-    - Linux: source .env/bin/activate
-    - Windows: .env\Scripts\activate
+    - Linux: ```source .env/bin/activate```
+    - Windows: ```.env\Scripts\activate```
 
-3. Įdiegiam reikiamus python modulius: pip install -r requirements.txt
+3. Įdiegiam reikiamus python modulius: ```pip install -r requirements.txt```
     - Windows naudotojai scikit-image diegia iš sukompiliuoto paketo. Siunčiamės iš čia [Windows scikit-image binaties](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-image)
-    - Suompiliuoto scikit-image paketo diegimas: pip install "package_name".whl
+    - Suompiliuoto scikit-image paketo diegimas: ```pip install "package_name".whl```
 
 - Jupyter notebook failui diegiame python modulius iš requirements_jupyter.txt
 
-4. Paleidžiam Streamlit prgramą: streamlit run main.py
+4. Paleidžiam Streamlit prgramą: ```streamlit run main.py```
 
 
 
