@@ -7,6 +7,9 @@
 - [Shai Avidan, Ariel Shamir, Seam carving for content-aware image resizing, (2007-07-29)](https://dl.acm.org/doi/10.1145/1275808.1276390)
 - [Alan Edelman, David P. Sanders & Charles E. Leiserson, Introduction to Computational Thinking, MIT](https://computationalthinking.mit.edu/Fall22/images_abstractions/seamcarving/)
 
+### Nuoroda į streamplit.app
+
+https://gisora-streamlit-seam-carving-main-lexkky.streamlit.app/
 
 ### Naudotos priemonės:
 - python
