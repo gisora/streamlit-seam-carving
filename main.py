@@ -79,8 +79,8 @@ else:
     st.success("Atlikta!")
 
 # Nuotrauka kiekviena karta ja pakeitus yra isaugoma diske
-imsave("seam_img.png", image_out)
+imsave("downloads/seam_img.png", image_out)
 col32.image(image_out, use_column_width=True)
 
 st.sidebar.markdown("\n")
-st.sidebar.download_button("Atsiųsti sutrauktą nuotrauką", convert_image_for_download("seam_img.png"), "img_seam.png", "image/png")
+st.sidebar.download_button("Atsiųsti sutrauktą nuotrauką", convert_image_for_download("downloads/seam_img.png"), "img_seam.png", "image/png")
