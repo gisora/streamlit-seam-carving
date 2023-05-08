@@ -9,7 +9,7 @@
 
 ### Nuoroda į streamplit.app
 
-https://gisora-streamlit-seam-carving-main-lexkky.streamlit.app/
+https://gisora-seam-carving.streamlit.app/
 
 ### Naudotos priemonės:
 - python
