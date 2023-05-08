@@ -21,7 +21,7 @@ st.write("***")
 # Sidebar
 st.sidebar.write("# Nustatymai")
 scale_ratio = st.sidebar.slider("Nuotraukos dydis procentais: ", 25, 100, 50)
-quality = st.sidebar.selectbox("Rezultato kokybė:", ("Geriausia", "Vidutinė", "Prasčiausia"))
+quality = st.sidebar.selectbox("Rezultato kokybė:", ("Vidutinė", "Geriausia", "Prasčiausia"))
 draw_mode_radio = st.sidebar.radio("Papildoma informaciją originalioje nuotraukoje:", ["Jokia", "Siūlė", "Stulpelis"])        
 auto_shrink_image = st.sidebar.checkbox("Sutraukti automatiškai")
 
@@ -67,7 +67,7 @@ col31.image(sc.draw_seam(seam_at, draw_mode=draw_mode), use_column_width=True)
 
 
 # TODO 
-shrink_by = 200 if seam_at > 200 else seam_at
+shrink_by = 100 if seam_at > 100 else seam_at
 if not auto_shrink_image:
     if col22.button(f"Panaikinti {shrink_by} siūlių"):
         with st.spinner("Sutraukiama..."):
